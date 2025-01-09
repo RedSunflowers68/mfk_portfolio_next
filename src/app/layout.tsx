@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Outfit, Ovo } from "next/font/google";
 import "./globals.css";
+import { NextFont } from "next/dist/compiled/@next/font";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const outfit: NextFont = Outfit({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const ovo: NextFont = Ovo({
   subsets: ["latin"],
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -24,9 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${ovo.className} ${outfit.className} antialiased`}>
         {children}
       </body>
     </html>
