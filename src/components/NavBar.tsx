@@ -71,6 +71,42 @@ const NavBar = () => {
             <Image src={assets.menu_black} alt="menu" className="w-6"></Image>
           </button>
         </div>
+        {/*------------Mobile Burger Menu-----------*/}
+        <ul className="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-0 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500">
+          <div className="absolute right-6 top-6">
+            <Image
+              src={assets.close_black}
+              alt="close menu"
+              className="w-5 cursor-pointer"
+            />
+          </div>
+          <li>
+            <a className="font-Ovo" href="#top">
+              Home
+            </a>{" "}
+          </li>
+          <li>
+            {" "}
+            <a className="font-Ovo" href="#about">
+              About Me
+            </a>
+          </li>
+          <li>
+            <a className="font-Ovo" href="#services">
+              Services
+            </a>
+          </li>
+          <li>
+            <a className="font-Ovo" href="#projects">
+              Projects
+            </a>
+          </li>
+          <li>
+            <a className="font-Ovo" href="#contact">
+              Contact Me
+            </a>
+          </li>
+        </ul>
       </nav>
     </>
   );
