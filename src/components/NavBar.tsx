@@ -3,7 +3,7 @@ import { assets } from "../../assets/assets";
 import Image from "next/image";
 
 const NavBar = () => {
-  const sideMenuRef = useRef<HTMLDivElement>({} as HTMLDivElement);
+  const sideMenuRef = useRef<HTMLUListElement>({} as HTMLUListElement);
 
   const openMenu = () => {
     sideMenuRef.current.style.transform = "translateX(-16rem)";
