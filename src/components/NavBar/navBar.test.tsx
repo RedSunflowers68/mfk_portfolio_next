@@ -4,7 +4,7 @@ import NavBar from "./NavBar";
 import { describe, expect, it } from "@jest/globals";
 import "@testing-library/jest-dom";
 
-describe("NavBar Compnent", () => {
+describe("NavBar Component", () => {
   it("should render the NavBar correctly", () => {
     render(<NavBar />);
 
