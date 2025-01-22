@@ -4,7 +4,7 @@ import { assets } from "../../../assets/assets";
 
 const Header = () => {
   return (
-    <div>
+    <div className="w-11-/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
       <div>
         <Image
           src={assets.profile_img}
@@ -23,7 +23,7 @@ const Header = () => {
         I am a Software Developer currently living in Texas, USA with 2.5 years
         of experiance, primarily for consultancies.
       </p>
-      <div>
+      <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
         <a
           href="#contact"
           className="px-10 py-3 border-white rounded-full bg-black text-white flex items-center gap-2"
