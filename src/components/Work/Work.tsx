@@ -29,7 +29,7 @@ const Work = () => {
                   src={assets.send_icon}
                   alt={"send icon"}
                   className="w-5"
-                ></Image>
+                ></Image> c
               </div>
             </div>
           </div>
